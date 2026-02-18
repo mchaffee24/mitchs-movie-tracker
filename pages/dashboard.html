@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Tracker | Dashboard</title>
+
+    <!-- Bootstrap (simple + mobile-friendly) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Mitch’s Movie Tracker</a>
+            <a class="btn btn-outline-light btn-sm" href="session-data.html">Session Data</a>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <h1 class="h4 mb-3">Search Movies</h1>
+
+        <!-- Search UI (simple like the lab) -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <label for="search-input" class="form-label">Search by title, genre, or description</label>
+
+                <div class="input-group">
+                    <input id="search-input" class="form-control" type="text" placeholder="Example: sci-fi" />
+                    <button id="search-btn" class="btn btn-primary" type="button">Search</button>
+                    <button id="reset-btn" class="btn btn-outline-secondary" type="button">Reset</button>
+                </div>
+
+                <small id="results-count" class="text-muted d-block mt-2">Showing 0 results</small>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="row g-3"></div>
+
+        <div id="empty" class="text-center text-muted py-5 d-none">
+            No matches found.
+        </div>
+    </main>
+
+    <script src="../scripts/movies-data.js"></script>
+    <script src="../scripts/search.js"></script>
+</body>
+
+</html>
