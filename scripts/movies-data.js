@@ -1,216 +1,73 @@
-// movies-data.js
-// Simple dataset (array of objects)
-
 const movies = [
-  {
-    title: "Inception",
-    genre: "Sci-Fi",
-    year: 2010,
-    description: "A thief enters dreams to steal secrets and plant ideas.",
-    link: "https://www.imdb.com/title/tt1375666/"
-  },
-  {
-    title: "The Dark Knight",
-    genre: "Action",
-    year: 2008,
-    description: "Batman faces the Joker as Gotham descends into chaos.",
-    link: "https://www.imdb.com/title/tt0468569/"
-  },
-  {
-    title: "Interstellar",
-    genre: "Sci-Fi",
-    year: 2014,
-    description: "A space mission to save humanity across time and distance.",
-    link: "https://www.imdb.com/title/tt0816692/"
-  },
-  {
-    title: "Parasite",
-    genre: "Drama",
-    year: 2019,
-    description: "A dark social satire about class and deception.",
-    link: "https://www.imdb.com/title/tt6751668/"
-  },
-  {
-    title: "Get Out",
-    genre: "Horror",
-    year: 2017,
-    description: "A weekend visit turns into something terrifying.",
-    link: "https://www.imdb.com/title/tt5052448/"
-  },
-  {
-    title: "Titanic",
-    genre: "Romance",
-    year: 1997,
-    description: "A love story unfolds aboard the ill-fated RMS Titanic.",
-    link: "https://www.imdb.com/title/tt0120338/"
-  },
-  {
-    title: "Avatar",
-    genre: "Sci-Fi",
-    year: 2009,
-    description: "A marine on Pandora becomes torn between duty and a new world.",
-    link: "https://www.imdb.com/title/tt0499549/"
-  },
-  {
-    title: "Avengers: Endgame",
-    genre: "Action",
-    year: 2019,
-    description: "The Avengers assemble for a final stand against Thanos.",
-    link: "https://www.imdb.com/title/tt4154796/"
-  },
-  {
-    title: "The Shawshank Redemption",
-    genre: "Drama",
-    year: 1994,
-    description: "Two imprisoned men bond over years, finding hope and redemption.",
-    link: "https://www.imdb.com/title/tt0111161/"
-  },
-  {
-    title: "Forrest Gump",
-    genre: "Drama",
-    year: 1994,
-    description: "A man with a kind heart influences history in unexpected ways.",
-    link: "https://www.imdb.com/title/tt0109830/"
-  },
-  {
-    title: "Pulp Fiction",
-    genre: "Crime",
-    year: 1994,
-    description: "Interwoven stories of crime and redemption in Los Angeles.",
-    link: "https://www.imdb.com/title/tt0110912/"
-  },
-  {
-    title: "The Godfather",
-    genre: "Crime",
-    year: 1972,
-    description: "The aging patriarch of a crime dynasty transfers control to his son.",
-    link: "https://www.imdb.com/title/tt0068646/"
-  },
-  {
-    title: "The Godfather Part II",
-    genre: "Crime",
-    year: 1974,
-    description: "The rise of Vito Corleone and Michael’s grip on the family empire.",
-    link: "https://www.imdb.com/title/tt0071562/"
-  },
-  {
-    title: "Star Wars: Episode IV - A New Hope",
-    genre: "Sci-Fi",
-    year: 1977,
-    description: "A farm boy joins a rebellion to defeat an evil empire.",
-    link: "https://www.imdb.com/title/tt0076759/"
-  },
-  {
-    title: "Jurassic Park",
-    genre: "Adventure",
-    year: 1993,
-    description: "A theme park with cloned dinosaurs spirals out of control.",
-    link: "https://www.imdb.com/title/tt0107290/"
-  },
-  {
-    title: "The Lion King",
-    genre: "Animation",
-    year: 1994,
-    description: "A young lion prince must reclaim his throne.",
-    link: "https://www.imdb.com/title/tt0110357/"
-  },
-  {
-    title: "Toy Story",
-    genre: "Animation",
-    year: 1995,
-    description: "A cowboy doll feels threatened by a flashy new space toy.",
-    link: "https://www.imdb.com/title/tt0114709/"
-  },
-  {
-    title: "Finding Nemo",
-    genre: "Animation",
-    year: 2003,
-    description: "A clownfish searches the ocean to find his missing son.",
-    link: "https://www.imdb.com/title/tt0266543/"
-  },
-  {
-    title: "The Matrix",
-    genre: "Sci-Fi",
-    year: 1999,
-    description: "A hacker discovers reality is a simulation and joins a rebellion.",
-    link: "https://www.imdb.com/title/tt0133093/"
-  },
-  {
-    title: "Gladiator",
-    genre: "Action",
-    year: 2000,
-    description: "A betrayed general becomes a gladiator seeking vengeance.",
-    link: "https://www.imdb.com/title/tt0172495/"
-  },
-  {
-    title: "The Lord of the Rings: The Fellowship of the Ring",
-    genre: "Fantasy",
-    year: 2001,
-    description: "A hobbit begins a dangerous journey to destroy a powerful ring.",
-    link: "https://www.imdb.com/title/tt0120737/"
-  },
-  {
-    title: "The Lord of the Rings: The Two Towers",
-    genre: "Fantasy",
-    year: 2002,
-    description: "The fellowship is broken as war spreads across Middle-earth.",
-    link: "https://www.imdb.com/title/tt0167261/"
-  },
-  {
-    title: "The Lord of the Rings: The Return of the King",
-    genre: "Fantasy",
-    year: 2003,
-    description: "The final battle for Middle-earth begins as the ring nears its fate.",
-    link: "https://www.imdb.com/title/tt0167260/"
-  },
-  {
-    title: "Harry Potter and the Sorcerer's Stone",
-    genre: "Fantasy",
-    year: 2001,
-    description: "A boy discovers he’s a wizard and starts school at Hogwarts.",
-    link: "https://www.imdb.com/title/tt0241527/"
-  },
-  {
-    title: "Spider-Man: No Way Home",
-    genre: "Action",
-    year: 2021,
-    description: "Spider-Man’s identity causes multiverse chaos after a spell goes wrong.",
-    link: "https://www.imdb.com/title/tt10872600/"
-  },
-  {
-    title: "Black Panther",
-    genre: "Action",
-    year: 2018,
-    description: "T’Challa returns home to Wakanda to lead as king and protector.",
-    link: "https://www.imdb.com/title/tt1825683/"
-  },
-  {
-    title: "Top Gun: Maverick",
-    genre: "Action",
-    year: 2022,
-    description: "Maverick trains a new generation of pilots for a high-stakes mission.",
-    link: "https://www.imdb.com/title/tt1745960/"
-  },
-  {
-    title: "Barbie",
-    genre: "Comedy",
-    year: 2023,
-    description: "Barbie steps into the real world and questions what it means to be perfect.",
-    link: "https://www.imdb.com/title/tt1517268/"
-  },
-  {
-    title: "Oppenheimer",
-    genre: "Drama",
-    year: 2023,
-    description: "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
-    link: "https://www.imdb.com/title/tt15398776/"
-  },
-  {
-    title: "The Super Mario Bros. Movie",
-    genre: "Animation",
-    year: 2023,
-    description: "Mario and Luigi are pulled into a world of adventure and power-ups.",
-    link: "https://www.imdb.com/title/tt6718170/"
-  }
-
+  { title: "Inception", genre: "Sci-Fi", year: 2010, description: "A thief enters dreams to steal secrets and plant ideas.", link: "https://www.imdb.com/title/tt1375666/" },
+  { title: "The Dark Knight", genre: "Action", year: 2008, description: "Batman faces the Joker as Gotham descends into chaos.", link: "https://www.imdb.com/title/tt0468569/" },
+  { title: "Interstellar", genre: "Sci-Fi", year: 2014, description: "A space mission to save humanity across time and distance.", link: "https://www.imdb.com/title/tt0816692/" },
+  { title: "Parasite", genre: "Drama", year: 2019, description: "A dark social satire about class and deception.", link: "https://www.imdb.com/title/tt6751668/" },
+  { title: "Get Out", genre: "Horror", year: 2017, description: "A weekend visit turns into something terrifying.", link: "https://www.imdb.com/title/tt5052448/" },
+  { title: "Titanic", genre: "Romance", year: 1997, description: "A love story unfolds aboard the ill-fated RMS Titanic.", link: "https://www.imdb.com/title/tt0120338/" },
+  { title: "Avatar", genre: "Sci-Fi", year: 2009, description: "A marine on Pandora becomes torn between duty and a new world.", link: "https://www.imdb.com/title/tt0499549/" },
+  { title: "Avengers: Endgame", genre: "Action", year: 2019, description: "The Avengers assemble for a final stand against Thanos.", link: "https://www.imdb.com/title/tt4154796/" },
+  { title: "The Shawshank Redemption", genre: "Drama", year: 1994, description: "Two imprisoned men bond over years, finding hope and redemption.", link: "https://www.imdb.com/title/tt0111161/" },
+  { title: "Forrest Gump", genre: "Drama", year: 1994, description: "A man with a kind heart influences history in unexpected ways.", link: "https://www.imdb.com/title/tt0109830/" },
+  { title: "Pulp Fiction", genre: "Crime", year: 1994, description: "Interwoven stories of crime and redemption in Los Angeles.", link: "https://www.imdb.com/title/tt0110912/" },
+  { title: "The Godfather", genre: "Crime", year: 1972, description: "The aging patriarch of a crime dynasty transfers control to his son.", link: "https://www.imdb.com/title/tt0068646/" },
+  { title: "The Godfather Part II", genre: "Crime", year: 1974, description: "The rise of Vito Corleone and Michael’s grip on the family empire.", link: "https://www.imdb.com/title/tt0071562/" },
+  { title: "Star Wars: Episode IV - A New Hope", genre: "Sci-Fi", year: 1977, description: "A farm boy joins a rebellion to defeat an evil empire.", link: "https://www.imdb.com/title/tt0076759/" },
+  { title: "Jurassic Park", genre: "Adventure", year: 1993, description: "A theme park with cloned dinosaurs spirals out of control.", link: "https://www.imdb.com/title/tt0107290/" },
+  { title: "The Lion King", genre: "Animation", year: 1994, description: "A young lion prince must reclaim his throne.", link: "https://www.imdb.com/title/tt0110357/" },
+  { title: "Toy Story", genre: "Animation", year: 1995, description: "A cowboy doll feels threatened by a flashy new space toy.", link: "https://www.imdb.com/title/tt0114709/" },
+  { title: "Finding Nemo", genre: "Animation", year: 2003, description: "A clownfish searches the ocean to find his missing son.", link: "https://www.imdb.com/title/tt0266543/" },
+  { title: "The Matrix", genre: "Sci-Fi", year: 1999, description: "A hacker discovers reality is a simulation and joins a rebellion.", link: "https://www.imdb.com/title/tt0133093/" },
+  { title: "Gladiator", genre: "Action", year: 2000, description: "A betrayed general becomes a gladiator seeking vengeance.", link: "https://www.imdb.com/title/tt0172495/" },
+  { title: "The Lord of the Rings: The Fellowship of the Ring", genre: "Fantasy", year: 2001, description: "A hobbit begins a dangerous journey to destroy a powerful ring.", link: "https://www.imdb.com/title/tt0120737/" },
+  { title: "The Lord of the Rings: The Two Towers", genre: "Fantasy", year: 2002, description: "The fellowship is broken as war spreads across Middle-earth.", link: "https://www.imdb.com/title/tt0167261/" },
+  { title: "The Lord of the Rings: The Return of the King", genre: "Fantasy", year: 2003, description: "The final battle for Middle-earth begins as the ring nears its fate.", link: "https://www.imdb.com/title/tt0167260/" },
+  { title: "Harry Potter and the Sorcerer's Stone", genre: "Fantasy", year: 2001, description: "A boy discovers he’s a wizard and starts school at Hogwarts.", link: "https://www.imdb.com/title/tt0241527/" },
+  { title: "Spider-Man: No Way Home", genre: "Action", year: 2021, description: "Spider-Man’s identity causes multiverse chaos after a spell goes wrong.", link: "https://www.imdb.com/title/tt10872600/" },
+  { title: "Black Panther", genre: "Action", year: 2018, description: "T’Challa returns home to Wakanda to lead as king and protector.", link: "https://www.imdb.com/title/tt1825683/" },
+  { title: "Top Gun: Maverick", genre: "Action", year: 2022, description: "Maverick trains a new generation of pilots for a high-stakes mission.", link: "https://www.imdb.com/title/tt1745960/" },
+  { title: "Barbie", genre: "Comedy", year: 2023, description: "Barbie steps into the real world and questions what it means to be perfect.", link: "https://www.imdb.com/title/tt1517268/" },
+  { title: "Oppenheimer", genre: "Drama", year: 2023, description: "The story of J. Robert Oppenheimer and the creation of the atomic bomb.", link: "https://www.imdb.com/title/tt15398776/" },
+  { title: "The Super Mario Bros. Movie", genre: "Animation", year: 2023, description: "Mario and Luigi are pulled into a world of adventure and power-ups.", link: "https://www.imdb.com/title/tt6718170/" },
+  { title: "The Batman", genre: "Action", year: 2022, description: "Batman uncovers corruption in Gotham while hunting a serial killer.", link: "https://www.imdb.com/title/tt1877830/" },
+  { title: "The Social Network", genre: "Drama", year: 2010, description: "The rise of Facebook and the lawsuits that followed.", link: "https://www.imdb.com/title/tt1285016/" },
+  { title: "Whiplash", genre: "Drama", year: 2014, description: "A young drummer faces an intense music instructor.", link: "https://www.imdb.com/title/tt2582802/" },
+  { title: "Joker", genre: "Drama", year: 2019, description: "A troubled man descends into madness in Gotham City.", link: "https://www.imdb.com/title/tt7286456/" },
+  { title: "Deadpool", genre: "Action", year: 2016, description: "A wisecracking mercenary seeks revenge.", link: "https://www.imdb.com/title/tt1431045/" },
+  { title: "The Hunger Games", genre: "Adventure", year: 2012, description: "A deadly televised competition in a dystopian world.", link: "https://www.imdb.com/title/tt1392170/" },
+  { title: "The Incredibles", genre: "Animation", year: 2004, description: "A family of superheroes forced into retirement.", link: "https://www.imdb.com/title/tt0317705/" },
+  { title: "Frozen", genre: "Animation", year: 2013, description: "Two sisters face magical consequences in a frozen kingdom.", link: "https://www.imdb.com/title/tt2294629/" },
+  { title: "Coco", genre: "Animation", year: 2017, description: "A boy journeys to the Land of the Dead.", link: "https://www.imdb.com/title/tt2380307/" },
+  { title: "Shrek", genre: "Animation", year: 2001, description: "An ogre sets out to rescue a princess.", link: "https://www.imdb.com/title/tt0126029/" },
+  { title: "The Prestige", genre: "Drama", year: 2006, description: "Two rival magicians battle for supremacy.", link: "https://www.imdb.com/title/tt0482571/" },
+  { title: "Django Unchained", genre: "Western", year: 2012, description: "A freed slave teams up with a bounty hunter.", link: "https://www.imdb.com/title/tt1853728/" },
+  { title: "The Revenant", genre: "Adventure", year: 2015, description: "A frontiersman fights for survival.", link: "https://www.imdb.com/title/tt1663202/" },
+  { title: "A Quiet Place", genre: "Horror", year: 2018, description: "A family must live in silence to survive.", link: "https://www.imdb.com/title/tt6644200/" },
+  { title: "No Country for Old Men", genre: "Crime", year: 2007, description: "A hunter stumbles upon a drug deal gone wrong.", link: "https://www.imdb.com/title/tt0477348/" },
+  { title: "The Departed", genre: "Crime", year: 2006, description: "An undercover cop and mole play a deadly game.", link: "https://www.imdb.com/title/tt0407887/" },
+  { title: "The Silence of the Lambs", genre: "Thriller", year: 1991, description: "An FBI trainee seeks help from Hannibal Lecter.", link: "https://www.imdb.com/title/tt0102926/" },
+  { title: "Fight Club", genre: "Drama", year: 1999, description: "An underground fight club spirals out of control.", link: "https://www.imdb.com/title/tt0137523/" },
+  { title: "Braveheart", genre: "History", year: 1995, description: "A Scottish warrior leads a rebellion.", link: "https://www.imdb.com/title/tt0112573/" },
+  { title: "The Truman Show", genre: "Drama", year: 1998, description: "A man discovers his life is a reality TV show.", link: "https://www.imdb.com/title/tt0120382/" },
+  { title: "The Wolf of Wall Street", genre: "Drama", year: 2013, description: "A stockbroker rises and falls in excess.", link: "https://www.imdb.com/title/tt0993846/" },
+  { title: "The Hangover", genre: "Comedy", year: 2009, description: "A wild bachelor party in Las Vegas.", link: "https://www.imdb.com/title/tt1119646/" },
+  { title: "Step Brothers", genre: "Comedy", year: 2008, description: "Two grown men become stepbrothers.", link: "https://www.imdb.com/title/tt0838283/" },
+  { title: "Anchorman", genre: "Comedy", year: 2004, description: "A 1970s news anchor faces rivalry.", link: "https://www.imdb.com/title/tt0357413/" },
+  { title: "The Conjuring", genre: "Horror", year: 2013, description: "Paranormal investigators help a family.", link: "https://www.imdb.com/title/tt1457767/" },
+  { title: "It", genre: "Horror", year: 2017, description: "A group of kids battle a shape-shifting clown.", link: "https://www.imdb.com/title/tt1396484/" },
+  { title: "Saw", genre: "Horror", year: 2004, description: "Two men wake up trapped in a deadly game.", link: "https://www.imdb.com/title/tt0387564/" },
+  { title: "The Notebook", genre: "Romance", year: 2004, description: "A timeless love story across decades.", link: "https://www.imdb.com/title/tt0332280/" },
+  { title: "Mean Girls", genre: "Comedy", year: 2004, description: "A teen navigates high school cliques.", link: "https://www.imdb.com/title/tt0377092/" },
+  { title: "Knives Out", genre: "Mystery", year: 2019, description: "A detective investigates a wealthy family.", link: "https://www.imdb.com/title/tt8946378/" },
+  { title: "The Martian", genre: "Sci-Fi", year: 2015, description: "An astronaut survives alone on Mars.", link: "https://www.imdb.com/title/tt3659388/" },
+  { title: "Gravity", genre: "Sci-Fi", year: 2013, description: "Astronauts struggle after a disaster in space.", link: "https://www.imdb.com/title/tt1454468/" },
+  { title: "Doctor Strange", genre: "Action", year: 2016, description: "A surgeon becomes a master of mystic arts.", link: "https://www.imdb.com/title/tt1211837/" },
+  { title: "Iron Man", genre: "Action", year: 2008, description: "A billionaire builds a high-tech suit of armor.", link: "https://www.imdb.com/title/tt0371746/" },
+  { title: "Captain America: Civil War", genre: "Action", year: 2016, description: "The Avengers split over government control.", link: "https://www.imdb.com/title/tt3498820/" },
+  { title: "Guardians of the Galaxy", genre: "Sci-Fi", year: 2014, description: "A group of misfits save the galaxy.", link: "https://www.imdb.com/title/tt2015381/" },
+  { title: "Thor: Ragnarok", genre: "Action", year: 2017, description: "Thor faces Hela and the destruction of Asgard.", link: "https://www.imdb.com/title/tt3501632/" },
+  { title: "Black Widow", genre: "Action", year: 2021, description: "Natasha Romanoff confronts her past.", link: "https://www.imdb.com/title/tt3480822/" },
+  { title: "The Flash", genre: "Action", year: 2023, description: "Barry Allen alters timelines in the multiverse.", link: "https://www.imdb.com/title/tt0439572/" },
+  { title: "Mission: Impossible – Fallout", genre: "Action", year: 2018, description: "Ethan Hunt races to stop nuclear catastrophe.", link: "https://www.imdb.com/title/tt4912910/" }
 ];
+
