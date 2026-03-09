@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultsCount = document.getElementById("results-count");
     const emptyState = document.getElementById("empty-state");
 
-    // Defensive check
     if (!searchInput || !grid || !resultsCount || !emptyState) {
         console.error("Dashboard elements not found. Check your HTML IDs.");
         return;
@@ -35,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function renderMovies(list) {
-        // DOM mutation (required)
         grid.innerHTML = "";
 
         resultsCount.textContent = `${list.length} result${list.length === 1 ? "" : "s"}`;
@@ -77,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Tiny helper so titles/descriptions don't break HTML
     function escapeHtml(str) {
         return String(str)
             .replaceAll("&", "&amp;")

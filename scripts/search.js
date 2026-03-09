@@ -1,5 +1,4 @@
 // search.js
-// Simple loop-based search (controlled search)
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("search-form");
@@ -12,9 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show all movies on load
     renderResults(movies);
 
-    // Enter key + Search button (submit)
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // prevents page refresh
+        e.preventDefault();
         runSearch();
     });
 
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const query = input.value.trim().toLowerCase();
         console.log("Search query:", query);
 
-        // If empty query, show all (common expected behavior)
         if (query === "") {
             renderResults(movies);
             return;
