@@ -5,16 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Movie Tracker | Dashboard</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/main.css" />
 </head>
 
 <body class="bg-light">
+
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Mitch's Movie Tracker</a>
+
             <div class="d-flex gap-2">
                 <a class="btn btn-outline-light btn-sm" href="session-data.html">Session Data</a>
+                <a class="btn btn-outline-light btn-sm" href="login.html">Login</a>
                 <a class="btn btn-outline-light btn-sm" href="https://www.imdb.com/" target="_blank"
                     rel="noopener">IMDb</a>
                 <button id="logout-btn" class="btn btn-outline-warning btn-sm" type="button">Logout</button>
@@ -23,27 +27,43 @@
     </nav>
 
     <main class="container py-4">
+
         <header class="mb-3">
             <h1 class="h4 mb-1">Search Movies</h1>
-            <p class="text-muted mb-0">Search by title, genre, or description.</p>
+
+            <p class="text-muted mb-1">
+                Logged in as: <strong id="current-user">Loading...</strong>
+            </p>
+
+            <p class="text-muted">
+                Total movies in database: <strong id="movie-count"></strong>
+            </p>
         </header>
 
         <div class="card mb-3">
             <div class="card-body">
+
                 <label for="search-input" class="form-label">Search</label>
 
                 <form id="search-form">
                     <div class="input-group">
                         <input id="search-input" class="form-control" type="text" placeholder="Example: sci-fi"
                             autocomplete="off" />
-                        <button id="search-btn" class="btn btn-primary" type="submit">Search</button>
-                        <button id="reset-btn" class="btn btn-outline-secondary" type="button">Reset</button>
+
+                        <button id="search-btn" class="btn btn-primary" type="submit">
+                            Search
+                        </button>
+
+                        <button id="reset-btn" class="btn btn-outline-secondary" type="button">
+                            Reset
+                        </button>
                     </div>
                 </form>
 
-                <small id="results-count" class="text-muted d-block mt-2">
+                <span id="results-count" class="badge bg-secondary mt-2">
                     Showing 0 results
-                </small>
+                </span>
+
             </div>
         </div>
 
@@ -52,11 +72,13 @@
         <div id="empty" class="text-center text-muted py-5 d-none">
             No matches found.
         </div>
+
     </main>
 
     <script src="../scripts/movies-data.js"></script>
     <script src="../scripts/auth.js"></script>
     <script src="../scripts/search.js"></script>
+
 </body>
 
 </html>

@@ -12,9 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             console.log("Entered password:", password);
 
-            if (password === "movie123") {
+            if (password === "movie123" && username !== "") {
                 sessionStorage.setItem("loggedInUser", username);
                 window.location.href = "dashboard.html";
+            } else if (username === "") {
+                loginMessage.textContent = "Please enter a username.";
             } else {
                 loginMessage.textContent = "Incorrect password. Try movie123.";
             }
@@ -35,14 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // show current user if an element exists
     const currentUserText = document.getElementById("current-user");
     if (currentUserText) {
         const loggedInUser = sessionStorage.getItem("loggedInUser");
         currentUserText.textContent = loggedInUser ? loggedInUser : "Not logged in";
     }
 
-    // logout button
     if (logoutBtn) {
         logoutBtn.addEventListener("click", function () {
             sessionStorage.clear();
